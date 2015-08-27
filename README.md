@@ -56,10 +56,19 @@ Options
 **url** *(required)*
 
 >**_String_**
-
->Default: undefined
+>
+>>Default: undefined
 
 The path passed as the url of the ajax post request.
+
+
+**trigger**
+
+>**_jQuery, CSS Selector or DOM Element_**
+>
+>>Default: undefined
+
+If you want to bind the upload to a trigger, set an element as the trigger. If you do not set a valid element as the trigger ajax request is triggered as soon as any files are selected by the file input.
 
 
 **allowMultiple**
