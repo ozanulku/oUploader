@@ -74,7 +74,7 @@ If you want to bind the upload to a trigger, set an element as the trigger. If y
 **allowMultiple**
 
 >**_Boolean_**
-
->Default: false
+>
+>>Default: false
 
 Set to true in order to allow multiple file selection.
