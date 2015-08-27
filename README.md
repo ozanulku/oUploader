@@ -19,7 +19,8 @@ $.oUploader("setDefaults", defaults);
 
 Get the instance of oUploader.
 
-*returns oUploader Object*
+>*returns oUploader Object*
+
 ```javascript
 var instance = $("#ou-wrap").oUploader("instance");
 ```
