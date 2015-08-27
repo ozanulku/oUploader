@@ -205,3 +205,33 @@ Assign a callback to **change** event of the **file input**. If the function *re
 Assign a function to be called on [ajax post before it is send](http://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).
 
 " *A pre-request callback function that can be used to modify the jqXHR object before it is sent. Use this to set custom headers, etc. The jqXHR and settings objects are passed as arguments. This is an Ajax Event. Returning false in the beforeSend function will cancel the request.* "
+
+
+**onSuccess**
+
+>**_Function(response, jqxhr)_**
+>
+>>response => Response returned from the server
+>>jqxhr => [jQuery xhr object](http://api.jquery.com/Types/#jqXHR)
+
+A callback function that will be called when ajax request successfully completes.
+
+
+**onFail**
+
+>**_Function(response, jqxhr)_**
+>
+>>response => Response returned from the server
+>>jqxhr => [jQuery xhr object](http://api.jquery.com/Types/#jqXHR)
+
+A callback function that will be called when ajax request fails.
+
+
+**onComplete**
+
+>**_Function(response, jqxhr)_**
+>
+>>response => Response returned from the server
+>>jqxhr => [jQuery xhr object](http://api.jquery.com/Types/#jqXHR)
+
+A callback function that will be called when ajax request completes, regardless of success or failure.
