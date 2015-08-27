@@ -122,3 +122,41 @@ An object containing style rules to be added to the select file button.
 >>Default: false
 
 Set to true in order to allow multiple file selection.
+
+**maxSize**
+
+>**_Number_** (*KiB*)
+>
+>>Default: undefined
+
+Maximum allowed file size in KiB.
+
+
+**customFileTypes**
+
+>**_String_**
+>
+>>Default: undefined
+
+String passed into file input's [accept attribute](http://www.w3schools.com/tags/att_input_accept.asp).
+
+
+**feedback**
+
+>**_Object_**
+
+**feedback.enabled**
+
+>**_Boolean_**
+>
+>>Default: true
+
+Set to false if yo do not want the feedback texts to be shown.
+
+**feedback.element**
+
+>**_jQuery, CSS Selector or DOM Element_**
+>
+>>Default: internal info element of oUploader
+
+The element that feedback text will be written into.
