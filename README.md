@@ -160,3 +160,27 @@ Set to false if yo do not want the feedback texts to be shown.
 >>Default: internal info element of oUploader
 
 The element that feedback text will be written into.
+
+
+**texts_**
+
+>**_Object_**
+
+Texts used in the plugin.
+
+**texts.success**
+
+>**_String_**
+>
+>>Default: "Files were successfully uploaded."
+
+success text.
+
+**texts.sizeFail**
+
+>**_String_**
+>
+>>Default: "Cannot be uploaded because file size exceeds the limit."
+
+Exceeds maximum size failure text.
+
