@@ -51,6 +51,34 @@ Change/set options.
 instance.option(newOptions);
 ```
 
+**done**
+
+>*return oUploader Object*
+
+Assign a callback function to be called when ajax request successfully completes.
+```javascript
+instance.done(function(response,jqxhr){ });
+```
+
+**fail**
+
+>*return oUploader Object*
+
+Assign a callback function to be called when ajax request fails.
+```javascript
+instance.fail(function(response,jqxhr){ });
+```
+
+**always**
+
+>*return oUploader Object*
+
+Assign a callback function to be called when ajax request completes, regardless of success or failure.
+```javascript
+instance.always(function(response,jqxhr){ });
+```
+
+
 Options
 ------
 **url** *(required)*
