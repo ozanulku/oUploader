@@ -41,3 +41,15 @@ Check if there is any files selected.
 ```javascript
 instance.isEmpty();
 ```
+
+**option**
+
+>*return oUploader Object*
+
+Change/set options.
+```javascript
+instance.option(newOptions);
+```
+
+Options
+------
