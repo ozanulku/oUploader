@@ -184,3 +184,24 @@ success text.
 
 Exceeds maximum size failure text.
 
+
+**onChange**
+
+>**_Function(e, input)_**
+>
+>>e => change event object
+>>input => file input element
+
+Assign a callback to **change** event of the **file input**. If the function *return*s *false*, the selection will be canceled and the input be cleared.
+
+
+**beforeSend**
+
+>**_Function(jqxhr, ajaxSettings)_**
+>
+>>jqxhr => [jQuery xhr object](http://api.jquery.com/Types/#jqXHR)
+>>ajaxSettings => options of the ajax post
+
+Assign a function to be called on [ajax post before it is send](http://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).
+
+" *A pre-request callback function that can be used to modify the jqXHR object before it is sent. Use this to set custom headers, etc. The jqXHR and settings objects are passed as arguments. This is an Ajax Event. Returning false in the beforeSend function will cancel the request.* "
