@@ -17,28 +17,27 @@ $.oUploader("setDefaults", defaults);
 
 **instance**
 
-Get the instance of oUploader.
-
 >*returns oUploader Object*
 
+Get the instance of oUploader.
 ```javascript
 var instance = $("#ou-wrap").oUploader("instance");
 ```
 
 **destroy**
 
-Destroy the everything related to a oUploader instance
+>*returns jQuery of the oUploader container*
 
-*returns jQuery of the oUploader container*
+Destroy the everything related to a oUploader instance
 ```javascript
 instance.destroy();
 ```
 
 **isEmpty**
 
-Check if there is any files selected.
+>*returns true if there is any files selected, false otherwise*
 
-*returns true if there is any files selected, false otherwise*
+Check if there is any files selected.
 ```javascript
 instance.isEmpty();
 ```
