@@ -53,3 +53,18 @@ instance.option(newOptions);
 
 Options
 ------
+**url** *(required)*
+
+>*String*
+>Default: undefined
+
+The path passed as the url of the ajax post request.
+
+
+**allowMultiple**
+
+>*Boolean*
+
+>Default: false
+
+Set to true in order to allow multiple file selection.
