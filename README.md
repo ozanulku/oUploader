@@ -2,7 +2,7 @@
 A simple jQuery Ajax File Uploader Plugin
 
 
-Options
+Methods
 ------
 **setDefaults**
 
@@ -18,12 +18,26 @@ $.oUploader("setDefaults", defaults);
 **instance**
 
 Get the instance of oUploader.
+
+*returns oUploader Object*
 ```javascript
 var instance = $("#ou-wrap").oUploader("instance");
 ```
 
 **destroy**
+
 Destroy the everything related to a oUploader instance
+
+*returns jQuery of the oUploader container*
 ```javascript
 instance.destroy();
+```
+
+**isEmpty**
+
+Check if there is any files selected.
+
+*returns true if there is any files selected, false otherwise*
+```javascript
+instance.isEmpty();
 ```
