@@ -6,6 +6,11 @@ Options
 ------
 **setDefaults**
 Let's you globally change the default options of oUploader.
->defaults: {
+```javascript
+defaults: {
+  url: "myUploadHandler.php"
 }
->$.oUploader("setDefaults", defaults)
+$.oUploader("setDefaults", defaults);
+//make the myUploaderHandler.php the default url for ajax post
+```
+
