@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../src/oUploader.js"></script>
+    <title>oUploader Examples</title>
+    <style>
+        blockquote {
+            width: 200px;
+        }
+
+        #feedback {
+            width: 100%;
+            padding: 10px 5px;
+        }
+
+        .o-uploader {
+        }
+
+            .o-uploader > .o-uploader-wrapper {
+            }
+
+                .o-uploader > .o-uploader-wrapper > .o-uploader-btn {
+                }
+
+                .o-uploader > .o-uploader-wrapper > .o-uploader-info {
+                }
+
+        .o-uploader-fb-success {
+            background-color: darkgreen;
+            color: white;
+        }
+
+        .o-uploader-fb-failure {
+            background-color: orangered;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <blockquote>
+            <div id="uploader1"></div>
+            <br />
+            <br />
+            <div id="feedback"></div>
+        </blockquote>
+        <blockquote>
+            <div id="uploader2"></div>
+            <button id="trigger">Upload</button>
+        </blockquote>
+    </div>
+    <script>
+        //Change the default parameters globally
+        var def = {
+            buttonStyle: {
+                width: "200px"
+            }
+        };
+        $.oUploader("setDefaults", def);
+
+        $("#uploader1").oUploader({
+            url: "upload.php",
+            serverParameters: {
+                serverPath: "/tmp/files/"
+            },
+            feedback: {
+                element: $("#feedback")
+            },
+            onSuccess: function (response) {
+                alert(response);
+            }
+        });
+
+        $("#uploader2").oUploader({
+            url: "upload.php",
+            allowMultiple: true,
+            serverParameters: {
+                serverPath: "/tmp/fileCollection/"
+            },
+            trigger: $("#trigger")
+        }).oUploader("instance").done(function (data) {
+            alert(data);
+        });
+    </script>
+</body>
+</html>
