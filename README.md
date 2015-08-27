@@ -15,3 +15,15 @@ $.oUploader("setDefaults", defaults);
 //make the myUploaderHandler.php the default url for ajax post
 ```
 
+**instance**
+
+Get the instance of oUploader.
+```javascript
+var instance = $("#ou-wrap").oUploader("instance");
+```
+
+**destroy**
+Destroy the everything related to a oUploader instance
+```javascript
+instance.destroy();
+```
