@@ -55,7 +55,8 @@ Options
 ------
 **url** *(required)*
 
->*String*
+>**_String_**
+
 >Default: undefined
 
 The path passed as the url of the ajax post request.
@@ -63,7 +64,7 @@ The path passed as the url of the ajax post request.
 
 **allowMultiple**
 
->*Boolean*
+>**_Boolean_**
 
 >Default: false
 
