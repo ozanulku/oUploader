@@ -37,7 +37,6 @@
                     $.extend(true, _opt, options);
                     return instance;
                 },
-                _files: undefined,
                 getFiles: function(){
                     return instance.input.get(0).files;
                 },
