@@ -37,6 +37,10 @@
                     $.extend(true, _opt, options);
                     return instance;
                 },
+                _files: undefined,
+                getFiles: function(){
+                    return instance.input.get(0).files;
+                },
                 input: undefined,
                 info: undefined,
 
@@ -119,12 +123,16 @@
             //Draw the elements necessary
             instance._paint();
 
+            //Check trigger
             //If there is a trigger, bind the upload event to it. Otherwise bind the upload to the change event of the input
             if ($(_opt.trigger).length > 0) {
                 $(_opt.trigger).off(_opt.triggerEvent + ".oFileUpload").on(_opt.triggerEvent + ".oFileUpload", function () {
                     _upload();
                 });
-            } else {
+            } else if (_opt.trigger === "manual") {
+
+            }
+            else {
                 instance.input.on("change", function () {
                     _upload();
                 });
